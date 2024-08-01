@@ -6,7 +6,7 @@ export const CreateForm = () => {
   return (
     <div className="relative flex flex-col gap-6 w-1/2 items-center">
       <h1 className="uppercase font-bold text-white w-full text-3xl">
-        Tu veux ?
+        Créer une tache ?
       </h1>
       <Form onsubmit={createTask} classname="flex flex-col gap-3 w-full">
         <Input placeholder="tache" type="text" name="name" />

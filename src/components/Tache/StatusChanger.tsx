@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { updateStatus } from "../../utils";
 
 export const StatusChanger = ({
@@ -10,6 +10,10 @@ export const StatusChanger = ({
 }) => {
   const [value, setValue] = useState<string>(status);
   const available_status = ["en attente", "en cours", "terminer"];
+
+  useEffect(() => {
+    setValue(status);
+  }, [status]);
 
   const changeStatus = (currentStatus: string, direction: number) => {
     const index = available_status.findIndex((s) => s === currentStatus);
