@@ -2,6 +2,8 @@
 
 A minimalist to do application with React, Typescript, Supabase, PostGreSQL
 
+Live demo: https://worklist-six.vercel.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
